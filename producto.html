@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+    <title>Garrita Gatuna - Cat Shop</title>
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+    <div class="body_wrap">
+        <div class="grid_sup">
+            <header>
+                <div class="cont_logo_top">
+                    <img class="logo_top" src="./images/Logo-mini-2x@2x.png" alt="logo">
+                </div>
+                <div class="cont_barra_busq">
+                    <form action="">
+                        <input class="barra_busq" type="search" placeholder="¡Comienza tu búsqueda aquí!">
+                    </form>
+                </div>
+                <div class="cont_user">
+                    <p>¿Tienes cuenta?</p>
+                    <a class="link_style" href="./iniciar_sesion.html">
+                        <div class="cont_user_link">
+
+                            <i class="material-icons">person</i>
+                            <span>Iniciar sesión</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="cont_carrito">
+                    <a class="link_style" href="#">
+                        <div class="cont_cart">
+                            <i class="material-icons">shopping_cart</i>
+                            <p>S/ 0.00 </p>
+                        </div>
+                    </a>
+                </div>
+                <span class="btn_menu">
+                    <p>Menú</p>
+                    <i class="material-icons">menu</i>
+                </span>
+            </header>
+            <nav class="nav_top">
+                <ul class="top_menu_items">
+                    <li><a class="link_style" href="./index.html">Inicio</a></li>
+                    <li>
+                        <a class="link_style" href="#">Categorías &#x25BC;</a>
+                        <ul>
+                            <li><a class="link_style" href="#">Rascadores</a></li>
+                            <li><a class="link_style" href="#">Cepillos</a></li>
+                            <li><a class="link_style" href="#">Accesorios</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="link_style" href="#">Juguetes</a></li>
+                    <li><a class="link_style" href="#">Snacks</a></li>
+                    <li><a class="link_style" href="#">Accesorios</a></li>
+                    <li><a class="link_style" href="#">Ofertas</a></li>
+                    <li><a class="link_style" href="./contacto.html">Contacto</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+        <main>
+            <section class="cont_big_prod">
+                <div class="product_main_img">
+                    <img src="./images/producto_generico_big.jpg" alt="producto_generico_display">
+                </div>
+                <div class="product_title">
+                    <span>Home / Productos / Accesorios /</span>
+                    <h2>Producto genérico 2KG</h2>
+                    <h3>S/ XX.XX</h3>
+                </div>
+                <div class="product_details">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ipsa ab dolor alias.
+                        Praesentium nam consectetur dolores labore minima assumenda, blanditiis cumque, aperiam itaque
+                        dicta, neque debitis aliquid nisi! Totam quae accusantium aperiam error quos facere, eius itaque
+                        iste dolor. Praesentium nam consectetur dolores labore minima assumenda.</p>
+                    <h4>Disponibilidad:</h4>
+                    <div class="selector_unidades">
+                        <input type="number" name="unidades_bd" value="1" min="1" max="4">
+                        <form action="#">
+                            <input type="submit" value="Añadir al carrito" name="add_unit_bd"
+                                onclick="alert('Producto añadido al carrito')">
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="cont_big_prod_bot">
+                <h2>Productos relacionados</h2>
+                <div class="carrusel_prod_relacionados">
+                    <a class="link_style" href="#">
+                        <div class="item_prod_relacionados">
+                            <img src="./images/producto_generico.jpg" alt="producto_generico_1">
+                            <span>S/45.50</span>
+                            <p>Producto genérico 1</p>
+                            <form action="#">
+                                <input type="submit" value="Añadir al carrito"
+                                    onclick="alert('Producto añadido al carrito')">
+                            </form>
+                        </div>
+                    </a>
+                    <a class="link_style" href="#">
+                        <div class="item_prod_relacionados">
+                            <img src="./images/producto_generico.jpg" alt="producto_generico_2">
+                            <span>S/20.00</span>
+                            <p>Producto genérico 2</p>
+                            <form action="#">
+                                <input type="submit" value="Añadir al carrito"
+                                    onclick="alert('Producto añadido al carrito')">
+                            </form>
+                        </div>
+                    </a>
+                    <a class="link_style" href="#">
+                        <div class="item_prod_relacionados">
+                            <img src="./images/producto_generico.jpg" alt="producto_generico_3">
+                            <span>S/30.00</span>
+                            <p>Producto genérico 3</p>
+                            <form action="#">
+                                <input type="submit" value="Añadir al carrito"
+                                    onclick="alert('Producto añadido al carrito')">
+                            </form>
+                        </div>
+                    </a>
+                    <a class="link_style" href="#">
+                        <div class="item_prod_relacionados">
+                            <img src="./images/producto_generico.jpg" alt="producto_generico_4">
+                            <span>S/100.00</span>
+                            <p>Producto genérico 4</p>
+                            <form action="#">
+                                <input type="submit" value="Añadir al carrito"
+                                    onclick="alert('Producto añadido al carrito')">
+                            </form>
+                        </div>
+                    </a>
+                    <a class="link_style" href="#">
+                        <div class="item_prod_relacionados">
+                            <img src="./images/producto_generico.jpg" alt="producto_generico_5">
+                            <span>S/250.00</span>
+                            <p>Producto genérico 5</p>
+                            <form action="#">
+                                <input type="submit" value="Añadir al carrito"
+                                    onclick="alert('Producto añadido al carrito')">
+                            </form>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="footer_start">
+            <div class="social_networks">
+                <a class="link_style" href="#">
+                    <img src="./images/facebook-logo_50x50.png" alt="facebook_logo">
+                </a>
+                <a class="link_style" href="#">
+                    <img src="./images/Instagram-logo_50x50.png" alt="instagram_logo">
+                </a>
+            </div>
+            <nav class="nav_bot">
+                <ul>
+                    <li><a class="link_style" href="#">Términos y condiciones</a></li>
+                    <li><a class="link_style" href="#">Acerca de Garrita Gatuna</a></li>
+                    <li><a class="link_style" href="#">Libro de reclamaciones</a></li>
+                    <li><a class="link_style" href="#">Política de privacidad</a></li>
+                </ul>
+            </nav>
+        </div>
+        <span>
+            <p>&copy; 2022 - Garrita Gatuna. Todos los derechos reservados</p>
+        </span>
+    </footer>
+
+
+</body>
+
+</html>

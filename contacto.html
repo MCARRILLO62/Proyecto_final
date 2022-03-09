@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+    <title>Garrita Gatuna - Cat Shop</title>
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+    <div class="body_wrap">
+        <div class="grid_sup">
+            <header>
+                    <div class="cont_logo_top">
+                        <img class="logo_top" src="./images/Logo-mini-2x@2x.png" alt="logo">
+                    </div>
+                    <div class="cont_barra_busq">
+                        <form action="">
+                            <input class="barra_busq" type="search" placeholder="¡Comienza tu búsqueda aquí!">
+                        </form>
+                    </div>
+                    <div class="cont_user">
+                        <p>¿Tienes cuenta?</p>
+                        <a class="link_style" href="./iniciar_sesion.html">
+                            <div class="cont_user_link">
+
+                                <i class="material-icons">person</i>
+                                <span>Iniciar sesión</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cont_carrito">
+                        <a class="link_style" href="#">
+                            <div class="cont_cart">
+                                <i class="material-icons">shopping_cart</i>
+                                <p>S/ 0.00 </p>
+                            </div>
+                        </a>
+                    </div>
+                    <span class="btn_menu">
+                        <p>Menú</p>
+                        <i class="material-icons">menu</i>
+                    </span>
+            </header>
+            <nav class="nav_top">
+                <ul class="top_menu_items">
+                    <li><a class="link_style" href="./index.html">Inicio</a></li>
+                    <li>
+                        <a class="link_style" href="#">Categorías &#x25BC;</a>
+                        <ul>
+                            <li><a class="link_style" href="#">Rascadores</a></li>
+                            <li><a class="link_style" href="#">Cepillos</a></li>
+                            <li><a class="link_style" href="#">Accesorios</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="link_style" href="#">Juguetes</a></li>
+                    <li><a class="link_style" href="#">Snacks</a></li>
+                    <li><a class="link_style" href="#">Accesorios</a></li>
+                    <li><a class="link_style" href="#">Ofertas</a></li>
+                    <li><a class="link_style" href="./contacto.html">Contacto</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+        <main>
+            <div class="formulario_cont">
+                <div class="inf_contacto">
+                    <div>
+                        <i class="material-icons">mail_outline</i>
+                        <p>contacto@garritagatuna.com</p>
+                    </div>
+                    <div>
+                        <i class="material-icons">location_city</i>
+                        <p>Santiago de Surco, Lima - Perú</p>
+                    </div>
+                    <div>
+                        <i class="material-icons">phone</i>
+                        <p>(+51) 999 888 777</p>
+                    </div>
+                    <div class="cont_social_networks">
+                        <a href="#"><img src="./images/facebook-logo_50x50_flat.png" alt="facebook_logo"></a>
+                        <a href="#"><img src="./images/Instagram-logo_50x50_flat.png" alt="instagram_logo"></a>
+                    </div>
+                </div>
+                <section class="formulario">
+                    <form action="">
+
+                        <h3>Contacto:</h3>
+                        <p>* Campos obligatorios</p>
+                        <div>
+                            <input class="input_cont" type="text" id="nombre_cliente" name="nombre_cliente_bd"
+                                placeholder="* Ingresa tu nombre" required>
+                        </div>
+                        <div>
+                            <input class="input_cont" type="email" id="correo_cliente" name="correo_cliente_bd"
+                                placeholder="* Ingresa tu correo electrónico" required>
+                        </div>
+                        <div>
+                            <input class="input_cont" type="text" id="telefono_cliente" name="telefono_cliente_bd"
+                                placeholder=" Ingresa tu número de celular">
+                        </div>
+                        <div>
+                            <textarea class="input_cont" id="consulta_cliente" name="consulta_cliente_bd" cols="30"
+                                rows="10" placeholder="Escriba aquí su consulta." required></textarea>
+                        </div>
+                        <div class="boton_order">
+                            <div>
+                                <input class="boton_form" type="submit" value="Enviar mensaje">
+                            </div>
+
+                            <div>
+                                <input class="boton_form" type="reset" value="Borrar datos">
+                            </div>
+                        </div>
+
+                    </form>
+                </section>
+
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="footer_start">
+            <div class="social_networks">
+                <a class="link_style" href="#">
+                    <img src="./images/facebook-logo_50x50.png" alt="facebook_logo">
+                </a>
+                <a class="link_style" href="#">
+                    <img src="./images/Instagram-logo_50x50.png" alt="instagram_logo">
+                </a>
+            </div>
+            <nav class="nav_bot">
+                <ul>
+                    <li><a class="link_style" href="#">Términos y condiciones</a></li>
+                    <li><a class="link_style" href="#">Acerca de Garrita Gatuna</a></li>
+                    <li><a class="link_style" href="#">Libro de reclamaciones</a></li>
+                    <li><a class="link_style" href="#">Política de privacidad</a></li>
+                </ul>
+            </nav>
+        </div>
+        <span>
+            <p>&copy; 2022 - Garrita Gatuna. Todos los derechos reservados</p>
+        </span>
+    </footer>
+
+
+</body>
+
+</html>
