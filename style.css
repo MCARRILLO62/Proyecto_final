@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* Line-height para sobre-escribir el de bootstrap */
+    line-height: 1;
     /* revisión de bordes y tamaños con outline */
     /* outline: 1px solid red; */
 }
@@ -10,12 +12,20 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    /* Font-Family para sobre-escribir el de Bootstrap */
+    font-family: Arial, Helvetica, sans-serif;
 }
-
+p{
+    /* margin para sobre-escribir el de reboot */
+    margin: 0;
+}
 main {
     min-height: 60vh;
 }
-
+ol,ul{
+    /* padding para sobre-escribir el de reboot */
+    padding: 0;
+}
 .body_wrap {
     flex-grow: 1;
 }
@@ -166,6 +176,7 @@ header {
 .nav_top ul li ul {
     display: none;
     width: 100%;
+    z-index: 2;
 
 }
 
@@ -291,7 +302,9 @@ header {
 }
 
 .items:hover {
-    background-color: rgba(168, 227, 233, 0.2);
+    /* background-color: rgba(168, 227, 233, 0.2); */
+    transform: scale(105%);
+    transition: all .2s ease-in;
 }
 
 .items form {
@@ -548,6 +561,7 @@ footer span p {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-weight: bold;
+    font-size: 0.8rem;
     height: 35px;
     width: 120px;
     background-color: rgb(116, 202, 206);
@@ -752,6 +766,35 @@ footer span p {
     width: 330px;
     padding: 0.2rem;
 }
+/* control del ancho del slider a una medida no disponible en Bootstrap */
+.slide{
+    width: 90vw;
+}
+/* modificación de propiedades de controles del carrusel */
+.carousel-control-next, .carousel-control-prev{
+    width: auto;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+/* modificación de productos en lista */
+.product_page_items{
+    border-radius: 6px;
+}
+.img_border{
+    border-radius: 12px;
+}
+.btn_color{
+    background-color: rgb(116, 202, 206) !important;
+    border: none;
+    color: white;
+}
+.grilla_productos{
+    width: fit-content !important;
+    margin: 0 auto !important;
+}
+
+/* <========INICIO DE MEDIA QUERIES========> */
 
 @media screen and (min-width: 1400px) {
     .nav_top ul li {
@@ -798,7 +841,12 @@ footer span p {
         transition: all .3s;
     }
 }
-
+@media screen and (max-width:1200px) {
+    .aside_bar{
+        display: none !important;
+    }
+    
+}
 @media screen and (max-width: 1100px) {
     .grid_sup {
         grid-template-columns: 1fr;
@@ -848,7 +896,7 @@ footer span p {
         display: flex;
         grid-area: unset;
     }
-
+   
     .nav_top ul li:hover ul {
         display: block;
         position: relative;
@@ -912,6 +960,7 @@ footer span p {
 
     .show {
         top: 180px;
+        z-index: 3;
     }
 
     .stop_scroll {
@@ -972,7 +1021,16 @@ footer span p {
         width: 80vw;
     }
 }
-
+@media screen and (max-width:992px){
+    .cont_categoria{
+        width: 95vw !important;
+        max-width: 95vw !important;
+    }
+    .product_page_items{
+        width: 18rem !important;
+        margin: 0 auto !important;
+    }
+}
 @media screen and (max-width: 769px) {
     .banner_mobile {
         display: block;
@@ -1058,7 +1116,25 @@ footer span p {
     .formulario {
         width: 90vw;
     }
+    
 }
+
+
+/* Propiedades para hacer el carrusel responsive */
+.carousel_img_2{
+    display: none !important; 
+}
+@media screen and (max-width:768px){
+    .carousel_img_1{
+        display:none !important;
+    }
+    .carousel_img_2{
+        display: block !important;
+    }
+
+}
+/* fin de propiedades para carrusel responsive */
+
 
 @media screen and (max-width:701px) {
     .footer_start {
@@ -1112,6 +1188,11 @@ footer span p {
         padding: 15px;
     }
 }
+@media screen and (max-width:600px){
+    .navegacion_off{
+        display: none !important;
+    }
+}
 
 @media screen and (max-width:410px) {
     .boton_order {
@@ -1154,7 +1235,13 @@ footer span p {
         margin: 0 auto;
     }
 }
-@media screen {
+@media screen and (max-width:576px){
+    @media screen and (max-width:767px){
+        .product_page_items{
+            width: 85vw !important;
+        }
+        
+    }
     
 }
 @media screen and (max-width: 321px) {
