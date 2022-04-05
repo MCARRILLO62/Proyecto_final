@@ -630,6 +630,11 @@ footer span p {
     border: none;
 }
 
+.item_prod_relacionados img{
+    max-width: 150px;
+    max-height: 150px;
+}
+
 .item_prod_relacionados form input:hover {
     background-color: rgb(101, 175, 179)
 }

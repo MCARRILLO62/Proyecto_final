@@ -6,9 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Garrita Gatuna - Cat Shop</title>
+    <meta name="description" content="Tienda especializada en productos para gatos. Purina Pro Plan Adult 7+.">
+    <meta name="keywords" content="gato,cat,petshop,mascotas,purina">
+    <title>Purina Pro Plan Adult 7+ - 1KG | Garrita Gatuna </title>
     <script src="./app.js" defer></script>
 </head>
 
@@ -20,7 +23,7 @@
                     <a href="./index.html"> <img class="logo_top" src="./images/Logo-mini-2x@2x.png" alt="logo"></a>
                 </div>
                 <div class="cont_barra_busq">
-                    <form action="">
+                    <form action="./listado.html">
                         <input class="barra_busq" type="search" placeholder="¡Comienza tu búsqueda aquí!">
                     </form>
                 </div>
@@ -51,11 +54,11 @@
                 <ul class="top_menu_items">
                     <li><a class="link_style" href="./index.html">Inicio</a></li>
                     <li>
-                        <a class="link_style" href="#">Categorías &#x25BC;</a>
+                        <a class="link_style" href="./listado.html">Categorías &#x25BC;</a>
                         <ul>
-                            <li><a class="link_style" href="#">Rascadores</a></li>
-                            <li><a class="link_style" href="#">Cepillos</a></li>
-                            <li><a class="link_style" href="#">Accesorios</a></li>
+                            <li><a class="link_style" href="./listado.html">Rascadores</a></li>
+                            <li><a class="link_style" href="./listado.html">Cepillos</a></li>
+                            <li><a class="link_style" href="./listado.html">Accesorios</a></li>
                         </ul>
                     </li>
                     <li><a class="link_style" href="./listado.html">Juguetes</a></li>
@@ -71,18 +74,19 @@
         <main>
             <section class="cont_big_prod">
                 <div class="product_main_img">
-                    <img src="./images/producto_generico_big.jpg" alt="producto_generico_display">
+                    <img src="./images/comida/Pro-Plan-Cat-Adult-7-3kg.png" alt="producto_generico_display">
                 </div>
                 <div class="product_title">
-                    <span>Home / Productos / Accesorios /</span>
-                    <h2>Producto genérico 2KG</h2>
-                    <h3>S/ XX.XX</h3>
+                    <span>Home / Productos / Comida seca /</span>
+                    <h2>Purina Pro Plan Adult 7+ - 1KG</h2>
+                    <h3>S/ 95.<small>00</small></h3>
                 </div>
                 <div class="product_details">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ipsa ab dolor alias.
-                        Praesentium nam consectetur dolores labore minima assumenda, blanditiis cumque, aperiam itaque
-                        dicta, neque debitis aliquid nisi! Totam quae accusantium aperiam error quos facere, eius itaque
-                        iste dolor. Praesentium nam consectetur dolores labore minima assumenda.</p>
+                    <p class="pb-1">PURINA® PRO PLAN® Adulto 7+, es un alimento Super Premium para gatos adultos a partir de los 7
+                        años de edad.</p>
+
+                    <p> Nuestra exclusiva fórmula OptiAge®, contiene una mezcla de aminoácidos y antioxidantes naturales
+                        que ayudan a mantener la actividad cerebral y retrasar sus signos de envejecimiento.</p>
                     <h4>Disponibilidad:</h4>
                     <div class="selector_unidades">
                         <input type="number" name="unidades_bd" value="1" min="1" max="4">
@@ -98,9 +102,9 @@
                 <div class="carrusel_prod_relacionados">
                     <a class="link_style" href="#">
                         <div class="item_prod_relacionados">
-                            <img src="./images/producto_generico.jpg" alt="producto_generico_1">
-                            <span>S/45.50</span>
-                            <p>Producto genérico 1</p>
+                            <img src="./images/comida/Pro-Plan-Cat-Adult-pollo--766x1024.png" alt="Purina_pro_plan__adult">
+                            <span>S/85.00</span>
+                            <p>Purina Pro Plan Adult</p>
                             <form action="#">
                                 <input type="submit" value="Añadir al carrito"
                                     onclick="alert('Producto añadido al carrito')">
@@ -109,9 +113,9 @@
                     </a>
                     <a class="link_style" href="#">
                         <div class="item_prod_relacionados">
-                            <img src="./images/producto_generico.jpg" alt="producto_generico_2">
-                            <span>S/20.00</span>
-                            <p>Producto genérico 2</p>
+                            <img src="./images/comida/Pro-Plan-Cat-Kitten--761x1024.png" alt="Purina_pro_plan_kitten">
+                            <span>S/125.00</span>
+                            <p>Purina Pro Plan Kitten</p>
                             <form action="#">
                                 <input type="submit" value="Añadir al carrito"
                                     onclick="alert('Producto añadido al carrito')">
@@ -120,9 +124,9 @@
                     </a>
                     <a class="link_style" href="#">
                         <div class="item_prod_relacionados">
-                            <img src="./images/producto_generico.jpg" alt="producto_generico_3">
-                            <span>S/30.00</span>
-                            <p>Producto genérico 3</p>
+                            <img src="./images/comida/Hills-Perfect-Digestion.png" alt="Hills_cat_perfect_digestion">
+                            <span>S/180.00</span>
+                            <p>Hill's Perfect Digestion</p>
                             <form action="#">
                                 <input type="submit" value="Añadir al carrito"
                                     onclick="alert('Producto añadido al carrito')">
@@ -131,9 +135,9 @@
                     </a>
                     <a class="link_style" href="#">
                         <div class="item_prod_relacionados">
-                            <img src="./images/producto_generico.jpg" alt="producto_generico_4">
-                            <span>S/100.00</span>
-                            <p>Producto genérico 4</p>
+                            <img src="./images/comida/BRIT-SENIOR.png" alt="Brit_care_cat_senior">
+                            <span>S/140.00</span>
+                            <p>Brit-Care Senior Weight Control</p>
                             <form action="#">
                                 <input type="submit" value="Añadir al carrito"
                                     onclick="alert('Producto añadido al carrito')">
@@ -142,9 +146,9 @@
                     </a>
                     <a class="link_style" href="#">
                         <div class="item_prod_relacionados">
-                            <img src="./images/producto_generico.jpg" alt="producto_generico_5">
-                            <span>S/250.00</span>
-                            <p>Producto genérico 5</p>
+                            <img src="./images/comida/BRIT-STERILIZED-URINARY-HEALTH.jpg" alt="Brit_care_cat_Urinary_Health">
+                            <span>S/155.00</span>
+                            <p>Brit-Care Urinary Health</p>
                             <form action="#">
                                 <input type="submit" value="Añadir al carrito"
                                     onclick="alert('Producto añadido al carrito')">
@@ -167,7 +171,7 @@
             </div>
             <nav class="nav_bot">
                 <ul>
-                    <li><a class="link_style" href="#">Términos y condiciones</a></li>
+                    <li><a class="link_style" href="./terminos.html">Términos y condiciones</a></li>
                     <li><a class="link_style" href="#">Acerca de Garrita Gatuna</a></li>
                     <li><a class="link_style" href="#">Libro de reclamaciones</a></li>
                     <li><a class="link_style" href="#">Política de privacidad</a></li>
