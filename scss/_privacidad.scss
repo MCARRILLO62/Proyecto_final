@@ -1,0 +1,33 @@
+#politicas_privacidad{
+    p{
+        line-height: 1.5;
+            // Espaciado adicional para facilitar la lectura en móviles pequeños.
+            @media screen and (max-width:376px) {
+                line-height: 2;
+            }
+    }
+    h1{
+        padding: 0.5rem 0;
+        color: rgb(31, 31, 31);
+    }
+    ol{
+        margin: 1rem;
+        li{
+            font-weight: bold;
+            p{
+                padding-top: 1rem;
+                font-weight:normal;
+            }
+            ul{
+                margin-left: 1rem;
+                padding: 0.5rem;
+                list-style-type:square;
+                li{
+                    padding: 0.5rem;
+                    line-height: 1.5;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}

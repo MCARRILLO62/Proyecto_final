@@ -1,0 +1,59 @@
+#error {
+    flex-direction: column;
+
+    img {
+        width: 400px;
+        height: auto;
+        @media screen and (max-width:375px){
+            max-width: 80vw;
+            height: fit-content;
+        }
+    }
+
+    #error_texto {
+        h4 {
+            font-size: 30px;
+            width: 25vw;
+            margin: 0 auto;
+            color: $color_marca_2;
+            @media screen and (max-width:1440px){
+                width: 30vw;
+                font-size: 30px;
+            }
+            @media screen and (max-width:769px){
+                width: 50vw;
+                font-size: 30px;
+            }
+            @media screen and (max-width:426px){
+                width: 70vw;
+                font-size: 25px;
+            }
+            @media screen and (max-width:376px){
+                width: 70vw;
+                font-size: 20px;
+            }
+        }
+    }
+}
+#error_boton{
+    .btn-primary {
+        background: $color_marca_1;
+        border: none;
+    }
+    a{
+        font-size: 20px;
+        padding: 0.5rem 2rem;
+        @media screen and (max-width:769px){
+            font-size: 20px;
+            padding: 0.5rem 2rem;
+        }
+        @media screen and (max-width:426px){
+            font-size: 20px;
+            padding: 0.5rem 2rem;
+        }
+        @media screen and (max-width:376px){
+            font-size: 20px;
+            padding: 0.5rem 1rem;
+        }
+    }
+}

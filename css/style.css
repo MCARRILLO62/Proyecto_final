@@ -1176,7 +1176,7 @@ footer span p {
     -webkit-transition: all .3s;
     transition: all .3s;
   }
-  .show {
+  .mostrar {
     top: 180px;
     z-index: 3;
   }
@@ -1197,7 +1197,7 @@ footer span p {
     height: 40px;
     margin: 0 5%;
   }
-  .show {
+  .mostrar {
     top: 180px;
   }
   .stop_scroll {
@@ -1488,6 +1488,90 @@ footer span p {
   }
 }
 
+.offcanvas-header {
+  background: #74cace;
+}
+
+.offcanvas-body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.offcanvas-body #carrito_text_envio {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.offcanvas-body #carrito_text_envio p {
+  padding: 0.5rem 0.5rem;
+  font-size: 13px;
+}
+
+.offcanvas-body #carrito_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.offcanvas-body #carrito_item div img {
+  max-width: 70px;
+}
+
+.offcanvas-body #carrito_item div a {
+  padding-bottom: 0.5rem;
+  display: block;
+  color: #74cace;
+}
+
+.offcanvas-body #carrito_item div p {
+  font-size: 14px;
+}
+
+.offcanvas-body #carrito_item #cart_item_description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.offcanvas-body #carrito_item #cart_item_description #cart_delete {
+  margin-top: 1rem;
+  padding-bottom: 0;
+  color: #74cace;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.offcanvas-body #cart_totals div {
+  padding: 0 2rem;
+}
+
+.offcanvas-body #cart_button {
+  width: 100%;
+}
+
+.offcanvas-body #cart_button .btn-primary {
+  background-color: #74cace;
+  border-color: #74cace;
+}
+
+.offcanvas-body #cart_button .btn-primary:focus {
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+}
+
+.offcanvas-body #cart_button a {
+  margin: 0 2rem;
+}
+
 #terminos_condiciones h1 {
   padding: 0.5rem 0;
   color: #1f1f1f;
@@ -1513,4 +1597,272 @@ footer span p {
 #terminos_condiciones div ul li {
   margin-left: 3rem;
   padding: 0.5rem 0;
+}
+
+#error {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#error img {
+  width: 400px;
+  height: auto;
+}
+
+@media screen and (max-width: 375px) {
+  #error img {
+    max-width: 80vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+
+#error #error_texto h4 {
+  font-size: 30px;
+  width: 25vw;
+  margin: 0 auto;
+  color: #6785d7;
+}
+
+@media screen and (max-width: 1440px) {
+  #error #error_texto h4 {
+    width: 30vw;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  #error #error_texto h4 {
+    width: 50vw;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  #error #error_texto h4 {
+    width: 70vw;
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  #error #error_texto h4 {
+    width: 70vw;
+    font-size: 20px;
+  }
+}
+
+#error_boton .btn-primary {
+  background: #74cace;
+  border: none;
+}
+
+#error_boton a {
+  font-size: 20px;
+  padding: 0.5rem 2rem;
+}
+
+@media screen and (max-width: 769px) {
+  #error_boton a {
+    font-size: 20px;
+    padding: 0.5rem 2rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  #error_boton a {
+    font-size: 20px;
+    padding: 0.5rem 2rem;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  #error_boton a {
+    font-size: 20px;
+    padding: 0.5rem 1rem;
+  }
+}
+
+#nosotros_page {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60vw;
+}
+
+#nosotros_page h1 {
+  color: #74cace;
+}
+
+#nosotros_page p {
+  line-height: 1.5;
+  font-size: 20px;
+  margin: 0 8rem;
+}
+
+@media screen and (max-width: 1441px) {
+  #nosotros_page p {
+    font-size: 20px;
+    margin: 0 4rem;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  #nosotros_page p {
+    font-size: 20px;
+    margin: 0 4rem;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  #nosotros_page p {
+    font-size: 20px;
+    margin: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  #nosotros_page p {
+    font-size: 15px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  #nosotros_page p {
+    font-size: 14px;
+    margin: 0 1rem;
+  }
+}
+
+#nosotros_page img {
+  width: 35vw;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1441px) {
+  #nosotros_page img {
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  #nosotros_page img {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  #nosotros_page img {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  #nosotros_page img {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 1441px) {
+  #nosotros_page {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  #nosotros_page {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  #nosotros_page {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  #nosotros_page {
+    width: 80vw;
+  }
+}
+
+#politicas_privacidad p {
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 376px) {
+  #politicas_privacidad p {
+    line-height: 2;
+  }
+}
+
+#politicas_privacidad h1 {
+  padding: 0.5rem 0;
+  color: #1f1f1f;
+}
+
+#politicas_privacidad ol {
+  margin: 1rem;
+}
+
+#politicas_privacidad ol li {
+  font-weight: bold;
+}
+
+#politicas_privacidad ol li p {
+  padding-top: 1rem;
+  font-weight: normal;
+}
+
+#politicas_privacidad ol li ul {
+  margin-left: 1rem;
+  padding: 0.5rem;
+  list-style-type: square;
+}
+
+#politicas_privacidad ol li ul li {
+  padding: 0.5rem;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+#libro_reclamos {
+  width: 40vw;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1441px) {
+  #libro_reclamos {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  #libro_reclamos {
+    width: 80vw;
+  }
+}
+
+#libro_reclamos .bloque_forma {
+  background: rgba(245, 245, 245, 0.5);
+  border: 1px solid #e8e8e8;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+#libro_reclamos .btn-primary {
+  background-color: #74cace;
+  border-color: #74cace;
+}
+
+@media screen and (max-width: 769px) {
+  #libro_reclamos .espaciado_esp {
+    margin-top: 1rem;
+  }
 }

@@ -3,7 +3,7 @@ addEventListener('DOMContentLoaded', () => {
     if (btn_menu) {
         btn_menu.addEventListener('click', () =>{
             const top_menu_items = document.querySelector('.top_menu_items')
-            top_menu_items.classList.toggle('show')
+            top_menu_items.classList.toggle('mostrar')
             
         })
     }

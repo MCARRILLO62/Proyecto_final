@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <meta name="description"
+        content="Tienda especializada en productos para gatos. Encuentra comida, juguetes, arena, medicamentes y más.">
+    <meta name="keywords" content="gato,cat,arena,petshop,mascotas">
+    <link rel="shortcut icon" href="../ico/favicon.ico" type="image/x-icon">
+    <title>Garrita Gatuna - Términos y condiciones</title>
+    <script src="../js/app.js" defer></script>
+</head>
+
+<body>
+    <div class="body_wrap">
+        <div class="grid_sup">
+            <header>
+                <div class="cont_logo_top">
+                    <a href="../index.html"> <img class="logo_top" src="../images/Logo-mini-2x@2x.png" alt="logo"></a>
+                </div>
+                <div class="cont_barra_busq">
+                    <form action="./listado.html">
+                        <input class="barra_busq" type="search" placeholder="¡Comienza tu búsqueda aquí!">
+                    </form>
+                </div>
+                <div class="cont_user">
+                    <p>¿Tienes cuenta?</p>
+                    <a class="link_style" href="./iniciar_sesion.html">
+                        <div class="cont_user_link">
+
+                            <i class="material-icons">person</i>
+                            <span>Iniciar sesión</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="cont_carrito">
+                    <a class="link_style" data-bs-toggle="offcanvas" href="#offcanvasShopCart">
+                        <div class="cont_cart">
+                            <i class="material-icons">shopping_cart</i>
+                            <p>S/ 95.00 </p>
+                        </div>
+                    </a>
+                </div>
+                <span class="btn_menu">
+                    <p>Menú</p>
+                    <i class="material-icons">menu</i>
+                </span>
+            </header>
+            <nav class="nav_top">
+                <ul class="top_menu_items">
+                    <li><a class="link_style" href="../index.html">Inicio</a></li>
+                    <li>
+                        <a class="link_style" href="./listado.html">Categorías &#x25BC;</a>
+                        <ul>
+                            <li><a class="link_style" href="./listado.html">Rascadores</a></li>
+                            <li><a class="link_style" href="./listado.html">Cepillos</a></li>
+                            <li><a class="link_style" href="./listado.html">Accesorios</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="link_style" href="./listado.html">Juguetes</a></li>
+                    <li><a class="link_style" href="./listado.html">Snacks</a></li>
+                    <li><a class="link_style" href="./listado.html">Accesorios</a></li>
+                    <li><a class="link_style" href="./listado.html">Ofertas</a></li>
+                    <li><a class="link_style" href="./contacto.html">Contacto</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+
+        <main>
+            <!-- Carrito de compras -offcanvas -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasShopCart"
+                aria-labelledby="offcanvasShopCart_title">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-light" id="offcanvasShopCart_title">Detalle de compra</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body p-0">
+                    <div class="text-center py-2" id="carrito_text_envio">
+                        <p><strong>Delivery gratis</strong> para pedidos mayores a S/ 100</p>
+                        <p>S/10 para el resto de pedidos*</p>
+                        <p><small>*Aplican restricciones</small></p>
+                    </div>
+                    <div class="py-4" id="carrito_item">
+                        <div>
+                            <img src="../images/comida/Pro-Plan-Cat-Adult-7-3kg.png" alt="Purina_Pro_Plan_Adult+">
+                        </div>
+                        <div id="cart_item_description">
+                            <a class="fw-bold" target="_blank" href="./producto.html">Purina Pro Plan Adult 7+ -
+                                3KG</a>
+                            <p>Precio: S/95<small>.00</small></p>
+                            <a class="link_style fw-bold" id="cart_delete" href="#">Eliminar</a>
+                        </div>
+                    </div>
+                    <div class="py-4" id="cart_totals">
+                        <div class="d-flex justify-content-between py-1">
+                            <span>Subtotal:</span>
+                            <span>S/95<small>.00</small></span>
+                        </div>
+                        <div class="d-flex justify-content-between py-1">
+                            <span>Envío:</span>
+                            <span>S/10<small>.00</small></span>
+                        </div>
+                        <div class="d-flex justify-content-between py-1">
+                            <span class="fw-bold">Total</span>
+                            <span>S/105<small>.00</small></span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center" id="cart_button">
+                        <a class="btn btn-primary w-100" href="./checkout.html" role="button">Hacer pedido</a>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <div id="politicas_privacidad">
+                    <h1 class="text-center px-4 mt-5">Políticas de privacidad</h1>
+                    <div class="container px-5 my-3">
+                        <p id="intro_priv">Por medio del presente documento, Garrita Gatuna S.R.L., identificada con RUC N° 2020202020 domiciliada en Jr. Guardia Civil Norte – Surco (en adelante, “Garrita Gatuna”) pone a disposición de los usuarios su Política de Privacidad, la cual se encuentra en armonía con la normativa vigente sobre protección de Datos Personales (Ley N° 29733 y Decreto Supremo 003-2013-JUS). A continuación, se señalan las finalidades de tratamiento de la información que usted nos ha suministrado en nuestro Sitio Web – www.garritagatuna.com.pe, quiénes son los encargados de tratarla, el tiempo de almacenamiento en nuestras Bases de Datos, las medidas de seguridad, y los medios para ejercer sus derechos como titular de los Datos Personales.</p>
+                        <ol>
+                            <li>¿Qué información recopilamos?
+                                <p>Recolectamos la siguiente información personal:</p>
+                                <ul>
+                                    <li><strong>Respecto de los datos personales de nuestros Clientes:</strong> nombre y apellidos, documento nacional de identidad, RUC, pasaporte, carné de extranjería, teléfono, correo electrónico, dirección, imagen, voz, firma, firma electrónica, estado civil, fecha de nacimiento, nacionalidad, sexo, profesión, edad, datos académicos, tarjetas de crédito, pertenencia a clubes o asociaciones, aficiones y hábitos personales.</li>
+                                    <li><strong>Respecto a los datos personales de nuestros Usuarios Mkt:</strong> nombre y apellidos, documento nacional de identidad, RUC, pasaporte, carné de extranjería, teléfono, correo electrónico, dirección, voz, firma, firma electrónica, fecha de nacimiento, sexo y edad.</li>
+                                    <li><strong>Respecto de los datos personales de Postulantes:</strong> nombre y apellidos, documento nacional de identidad, pasaporte, carné de extranjería, teléfono, correo electrónico, dirección, imagen, firma, estado civil, fecha de nacimiento, nacionalidad, sexo, profesión, edad, datos académicos y datos de persona de contacto.</li>
+                                    <li><strong>Respecto de los Datos de Quejas y Reclamos:</strong> nombre y apellidos, documento nacional de identidad, RUC, pasaporte, carné de extranjería, teléfono, correo electrónico, dirección, firma y nacionalidad.</li>
+                                </ul>
+                                <p>Los datos personales en mención serán almacenados en los bancos de datos denominados “Clientes”, “Usuarios Mkt”, “Postulantes” y “Quejas y Reclamos” por el plazo indicado en cada aviso de privacidad o consentimiento. Cabe hacer de su conocimiento que nuestros bancos de datos se encuentran debidamente inscritos ante la Dirección General de Protección de Datos Personales, según lo exige la normativa vigente actualmente.</p>
+                            </li>
+                            <li class="mt-3">¿Cómo protegemos su información?
+                                <p>Garrita Gatuna ha adoptado todas las medidas técnicas, legales y organizacionales necesarias para garantizar la seguridad y el adecuado procesamiento de sus datos personales; así como para evitar cualquier manipulación indebida, pérdida accidental, destrucción o acceso no autorizado de terceros. Hacemos de su conocimiento que su información no será comercializada, transferida ni compartida sin su autorización y para fines ajenos a los que se describen a continuación.</p>
+                            </li>
+                            <li class="mt-3">¿Quién tiene acceso a su información?
+                                <p>Usted nos autoriza a que podamos compartir y encargar el tratamiento de su información personal con terceros que nos prestan servicios para mejorar nuestras actividades. En estos casos, garantizará que el tratamiento de sus datos se limite a las finalidades antes autorizadas y que se mantenga confidencialidad y se implementen las medidas de seguridad adecuadas.
+
+                                El detalle de los terceros encargados de tratamiento, así como a las Empresas Vinculadas de Garrita Gatuna se encuentran en el anexo de la presente Política.</p>
+                            </li>
+                            <li class="my-3">Actualizaciones de la presente política de privacidad
+                                <p>Con motivo de la mejora continua de nuestros procesos, Garrita Gatuna podrá realizar correcciones y actualizaciones a esta Política de Privacidad. Por favor, verifique estos términos regularmente para consultar los cambios que puedan haber existido y de qué manera le pueden afectar.</p>
+                            </li>
+                        </ol>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+    </div>
+    <footer>
+        <div class="footer_start">
+            <div class="social_networks">
+                <a class="link_style" target="_blank" href="http://www.facebook.com">
+                    <img src="../images/facebook-logo_50x50.png" alt="facebook_logo">
+                </a>
+                <a class="link_style" target="_blank" href="http://www.instagram.com">
+                    <img src="../images/Instagram-logo_50x50.png" alt="instagram_logo">
+                </a>
+            </div>
+            <nav class="nav_bot">
+                <ul>
+                    <li><a class="link_style" href="./terminos.html">Términos y condiciones</a></li>
+                    <li><a class="link_style" href="./acerca.html">Acerca de Garrita Gatuna</a></li>
+                    <li><a class="link_style" href="./libro.html">Libro de reclamaciones</a></li>
+                    <li><a class="link_style" href="./privacidad.html">Política de privacidad</a></li>
+                </ul>
+            </nav>
+        </div>
+        <span>
+            <p>&copy; 2022 - Garrita Gatuna. Todos los derechos reservados</p>
+        </span>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

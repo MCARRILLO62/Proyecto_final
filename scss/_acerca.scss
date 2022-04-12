@@ -1,0 +1,62 @@
+#nosotros_page{
+    flex-direction: column;
+    width: 60vw;
+
+    h1{
+        color: $color_marca_1;
+    }
+    p{
+        line-height: 1.5;
+        font-size: 20px;
+        margin: 0 8rem;
+        @media screen and (max-width:1441px) {
+            font-size: 20px;
+            margin: 0 4rem;
+        }
+        @media screen and (max-width:1025px) {
+            font-size: 20px;
+            margin: 0 4rem;
+        }
+        @media screen and (max-width:769px) {
+            font-size: 20px;
+            margin: 0 2rem;
+        }
+        @media screen and (max-width:426px) {
+            font-size: 15px;
+            margin: 0;
+        }
+        @media screen and (max-width:321px) {
+            font-size: 14px;
+            margin: 0 1rem;
+        }
+    }
+    img{
+        width: 35vw;
+        margin: 0 auto;
+        @media screen and (max-width:1441px) {
+            width: 40vw;
+        }
+        @media screen and (max-width:1025px) {
+            width: 50vw;
+        }
+        @media screen and (max-width:769px) {
+            width: 60vw;
+        }
+        @media screen and (max-width:426px) {
+            width: 70vw;
+        }
+
+    }
+    @media screen and (max-width:1441px) {
+        width: 70vw;
+    }
+    @media screen and (max-width:1025px) {
+        width: 80vw;
+    }
+    @media screen and (max-width:769px) {
+        width: 70vw;
+    }
+    @media screen and (max-width:426px) {
+        width: 80vw;
+    }
+}

@@ -1,0 +1,28 @@
+#terminos_condiciones{
+    h1{
+        padding: 0.5rem 0;
+        color: rgb(31, 31, 31);
+    }
+    div{
+        h3{
+            padding: 1rem 0;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        p{
+            line-height: 1.5;
+            padding: 0.5rem 0;
+            // Espaciado adicional para facilitar la lectura en móviles pequeños.
+            @media screen and (max-width:320px) {
+                        line-height: 2;
+            }
+        }
+        ul{
+            li{
+                margin-left: 3rem;
+                padding: 0.5rem 0;
+            }
+        }
+    }
+
+}

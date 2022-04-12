@@ -1,0 +1,26 @@
+#libro_reclamos {
+    width: 40vw;
+    margin: 0 auto;
+    @media screen and (max-width:1441px){
+        width: 60vw;
+    }
+    @media screen and (max-width:769px){
+        width: 80vw;
+    }
+    .bloque_forma {
+        background: rgba(245, 245, 245, .5);
+        border: 1px solid #e8e8e8;
+        padding: 20px;
+        border-radius: 4px;
+    }
+
+    .btn-primary {
+            background-color: $color_marca_1;
+            border-color: $color_marca_1;
+    }
+    .espaciado_esp{
+        @media screen and (max-width:769px){
+            margin-top: 1rem;
+        }
+    }
+}
